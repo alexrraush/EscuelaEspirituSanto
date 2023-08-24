@@ -1,0 +1,389 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Encabezado */
+  /* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del encabezado */
+.main-header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  max-width: 100px; /* Ajusta el tamaño de la imagen según tus preferencias */
+  height: auto;
+  margin-right: 10px; /* Añade un margen derecho para separar la imagen del texto */
+}
+
+.logo-text {
+  font-size: 1rem; /* Ajusta el tamaño del texto según tus preferencias */
+  margin: 0;
+  color: white;
+}
+
+/* Resto del código CSS sigue igual */
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin-right: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav {
+    margin-top: 10px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+}
+
+  
+  /* Banner */
+  .banner img {
+    max-width: 100%;
+  }
+  
+  /* Cursos */
+  .cursos {
+    padding: 2rem;
+  }
+  
+  /* Admisiones */
+  .admisiones {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+/* banner */
+  
+.banner {
+  width: 100%; 
+  text-align: center;
+  padding: 0;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-content h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.banner-content h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: slideInUp 1s ease;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.historia {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  text-align: center;
+}
+
+.historia-content {
+  margin-bottom: 1rem;
+}
+
+.historia img {
+  max-width: 100%;
+}
+
+
+.card {
+  border: none;
+  margin: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #666;
+}
+
+
+.social-media {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+footer p{
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 624px){
+  .banner-content h2{
+    font-size: 20px;
+  }
+}
+
+
+
+
+.whatsapp-alert {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
+.whatsapp-alert img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.image-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+.image-button-link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.image-button-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  color: #333;
+  animation: moveUp 1s ease-in-out infinite, changeColor 3s alternate infinite;
+}
+
+@keyframes moveUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes changeColor {
+  0%, 100% {
+    color: #333;
+  }
+  50% {
+    color: #ff6600;
+  }
+}
+
+
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(rgba(89, 180, 255, 0.8), rgba(255, 118, 225, 0.8));
+}
+
+.galeria img {
+  width: 550px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  margin: 6px;
+}
+
+.galeria img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(1.05) rotate(-1.2deg);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Media query para pantallas con un ancho máximo de 768px (ejemplo: dispositivos móviles) */
+@media (max-width: 768px) {
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor en dispositivos móviles */
+    height: auto;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+}
